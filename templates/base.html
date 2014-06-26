@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+{% load static from staticfiles %}
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telekom</title>
+
+  <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+  <link rel="stylesheet" href="{% static "css/normalize.css" %}">
+  <link rel="stylesheet" href="{% static "css/foundation.css" %}">
+
+  <!-- If you are using the gem version, you need this only -->
+  <link rel="stylesheet" href="{% static "css/app.css" %}">
+
+  <script src="{% static "js/vendor/modernizr.js" %}"></script>
+
+</head>
+<body>
+
+<div class="contain-to-grid">
+  <nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Telekom</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="#">Quiero Conectarme</a></li>
+      <li class="has-dropdown">
+        <a href="#">Base de Conocimiento</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li><a href="#">Información</a></li>
+    </ul>
+  </section>
+</nav>
+</div>
+
+<header>
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Telekom</h1>
+      <h4>La operadora comunitaria</h4>
+    </div>
+  </div>
+</headder>
+
+  <!-- body content here -->
+  {% block "content" %}
+  {% endblock %}
+
+  <script src="{% static "js/vendor/jquery.js" %}"></script>
+  <script src="{% static "js/foundation.min.js" %}"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

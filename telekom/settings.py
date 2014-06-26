@@ -115,3 +115,11 @@ REST_FRAMEWORK = {
 }
 
 DATABASE_ROUTERS = ['subscribers.routers.SubscriberRouter']
+
+TEMPLATE_DIRS = (
+  '/home/apardo/repos/telekom/templates/',
+)
+
+STATICFILES_DIRS = (
+  '/home/apardo/repos/telekom/static/',
+)
