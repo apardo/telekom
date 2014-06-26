@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'subscribers',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -62,6 +63,14 @@ DATABASES = {
     'NAME': 'telekom_dev',
     'USER': 'telekom',
     'PASSWORD': 'telekom',
+    'HOST': 'localhost',
+    'PORT': '',
+  },
+  'subscribers': {
+    'ENGINE': 'django.db.backends.mysql',
+    'NAME': 'kamailio',
+    'USER': 'root',
+    'PASSWORD': 'root',
     'HOST': 'localhost',
     'PORT': '',
   }
@@ -103,3 +112,5 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
+
+DATABASE_ROUTERS = ['subscribers.routers.SubscriberRouter']
