@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
-<html class="no-js" lang="en" >
+<html class="no-js" lang="en" ng-app="telekom">
 
 {% load static from staticfiles %}
 
@@ -25,7 +24,7 @@
   <nav class="top-bar" data-topbar>
   <ul class="title-area">
     <li class="name">
-      <h1><a href="#">Telekom</a></h1>
+      <h1><a href="/">Telekom</a></h1>
     </li>
      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -58,7 +57,7 @@
       <h4>La operadora comunitaria</h4>
     </div>
   </div>
-</headder>
+</header>
 
   <!-- body content here -->
   {% block "content" %}
@@ -69,5 +68,12 @@
   <script>
     $(document).foundation();
   </script>
+
+  <script src="{% static "js/vendor/jssip-0.3.0.min.js" %}"></script>
+  <script src="{% static "js/vendor/angular.min.js" %}"></script>
+  <script src="{% static "js/vendor/angular-route.min.js" %}"></script>
+
+  <script src="{% static "js/app.js" %}"></script>
+  <script src="{% static "js/controllers.js" %}"></script>
 </body>
 </html>
