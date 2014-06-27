@@ -3,6 +3,7 @@
 var telekom = angular.module('telekom', [
 	'ngRoute',
 	'telekomCtrls',
+  'telekomSrvs',
 ]);
 
 telekom.config(['$routeProvider',
