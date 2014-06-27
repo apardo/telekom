@@ -1,3 +1,5 @@
+<div class="container-fluid">
+
 <div class="modal fade" id="loginModal" ng-controller="rootCtrl">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -25,17 +27,23 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+</div>
 
-
+<div class="container-fluid">
 <div class="page-header">
   <h1>Telekom <small>La operadora comunitaria</small></h1>
 </div>
-
-<div class="jumbotron">
-
-  <div class="col-xs-6">
-  </div>
-
-  <div class="col-xs-6">
-  </div>
 </div>
+
+<div class="container-fluid" id="videos" style="display:true;">
+
+  <div class="col-xs-6 userVideoDiv">
+    <video id="selfVideo" width="320" height="240" autoplay></video>
+  </div>
+
+  <div class="col-xs-6 userVideoDiv">
+    <video id="remoteVideo" width="320" height="240" autoplay></video>
+  </div>
+
+</div>
+  

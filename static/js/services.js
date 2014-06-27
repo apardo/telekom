@@ -1,4 +1,4 @@
-"use strict";
+	"use strict";
 
 var telekomSrvs = angular.module('telekomSrvs', []);
 
