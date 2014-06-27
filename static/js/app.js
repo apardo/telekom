@@ -1,3 +1,5 @@
+"use strict";
+
 var telekom = angular.module('telekom', [
 	'ngRoute',
 	'telekomCtrls',
